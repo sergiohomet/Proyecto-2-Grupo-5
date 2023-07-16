@@ -1,24 +1,35 @@
 :root{
-    --altura-iconosCard: 3rem;
+    --altura-iconosCard: 3.5rem;
 }
 
-.card__cursos{
-    background-color: aqua;
-    height: 250px;
-    border: solid 3px;
-    margin: 1rem;
+.cardCursos{
+    background-color: #062142;
+    color: white;
+    border-radius: 15px;
 }
 
 .cardCursos__iconos{
     height: var(--altura-iconosCard);
-    width: calc(var(--altura-iconosCard)*1);
+    /* width: calc(var(--altura-iconosCard)*0.9); */
+    max-width: var(--altura-iconosCard);
     margin: 1rem;
     display: inline-block;
 }
 
 .cardCursos__titulo{
     font-size: 2rem;
-    display: inline-block;
-    background-color: red;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.cardCursos__li{
+    list-style: none;
+}
+
+.cardCursos__a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
 }
 

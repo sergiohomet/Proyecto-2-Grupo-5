@@ -6,6 +6,7 @@
     background-color: #062142;
     color: white;
     border-radius: 15px;
+    height: 100%;
 }
 
 .cardCursos__iconos{
@@ -20,6 +21,7 @@
     font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
+
     
 }
 
@@ -31,5 +33,9 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+}
+
+.card__100{
+    
 }
 

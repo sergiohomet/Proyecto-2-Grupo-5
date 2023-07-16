@@ -2,6 +2,11 @@
     --altura-iconosCard: 3.5rem;
 }
 
+
+.nuestroCursos{
+    box-shadow: inset 0px 0px 20px #062142;
+}
+
 .nuestroCursos__titulo{
     text-transform: uppercase;
     margin: 2rem;

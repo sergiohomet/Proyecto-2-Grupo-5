@@ -7,6 +7,7 @@
     margin: 2rem;
     font-size: 4rem;
     text-align: center;
+    font-weight: 700;
 }
 
 .cardCursos{
@@ -19,12 +20,11 @@
 
 .cardCursos:hover{
     translate: 0 -3px;
-    box-shadow: 10px 10px 10px black;
+    box-shadow: 10px 10px 10px black, inset 4px 1px 5px white;
 }
 
 .cardCursos__iconos{
     height: var(--altura-iconosCard);
-    /* width: calc(var(--altura-iconosCard)*0.9); */
     max-width: var(--altura-iconosCard);
     margin: 1rem;
     display: inline-block;
@@ -52,4 +52,23 @@
     color: yellow;
 }
 
+.cardCursos__li-leerMenos{
+    display: block;
+}
 
+.cardCursos__li-leerMas{
+    display: none;
+}
+
+
+@media screen and (max-width: 576px)  {
+    .cardCursos__li-leerMenos{
+        display: none;
+
+    }
+    
+    .cardCursos__li-leerMas{
+        display: block;
+    }
+    
+}

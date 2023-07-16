@@ -2,11 +2,24 @@
     --altura-iconosCard: 3.5rem;
 }
 
+.nuestroCursos__titulo{
+    text-transform: uppercase;
+    margin: 2rem;
+    font-size: 4rem;
+    text-align: center;
+}
+
 .cardCursos{
     background-color: #062142;
     color: white;
     border-radius: 15px;
     height: 100%;
+    transition: 400ms;
+}
+
+.cardCursos:hover{
+    translate: 0 -3px;
+    box-shadow: 10px 10px 10px black;
 }
 
 .cardCursos__iconos{
@@ -35,7 +48,8 @@
     text-transform: uppercase;
 }
 
-.card__100{
-    
+.cardCursos__a:hover{
+    color: yellow;
 }
+
 

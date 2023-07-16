@@ -18,6 +18,11 @@
     text-indent: 2rem;
 }
 
+.hero__containerP{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 @media screen and (max-width: 576px) {
 
     .dislay__none576{

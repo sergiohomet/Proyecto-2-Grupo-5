@@ -1,0 +1,23 @@
+.futurosCursos{
+    background-image: radial-gradient(circle at 95% 68%,#0a3871,#051933 58%);
+    padding: 5rem;
+    color: whitesmoke;
+}
+
+.futurosCursos__titulo{
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.futurosCursos__link{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+}
+
+.futurosCursos__link:hover{
+    color: yellow;
+}

@@ -74,6 +74,36 @@
     </section>
     <main class="nuestroCursos container-fluid">
         <h1 class="nuestroCursos__titulo">NUESTROS CURSOS</h1>
+
+        <form class="nuestroCursos__form">
+            <div class="row g-2 m-3">
+                <div class="col-sm-6 ">
+                  <div class="form-floating">
+                    <input type="text" class="form-control nuestroCursos__celdas" id="floatingInputGrid" placeholder="name@example.com" value="">
+                    <label for="floatingInputGrid">Curso:</label>
+                  </div>
+                </div>
+            </div>
+            <div class="row g-2 m-3">
+                <div class="col-sm-6 ">
+                  <div class="form-floating nuestroCursos__celdas">
+                    <select class="form-select" id="floatingSelectGrid">
+                      <option selected>Seleccione carrera</option>
+                      <option value="1">PROGRAMACION</option>
+                      <option value="2">DATA SCIENCE</option>
+                      <option value="3">GESTION</option>
+                      <option value="4">SEGURIDAD Y REDES</option>
+                      <option value="5">INOVACION</option>
+                      <option value="6">LIDERAZGO</option>
+                    </select>
+                    <label for="floatingSelectGrid">LISTA DE CURSO</label>
+                  </div>
+                </div>
+            </div>
+            <button type="submit" class="btn nuestroCursos__btn ">Submit</button>
+        </form>
+
+        </div>
         <div class="row">
             <div class="col-sm-6 col-lg-3 p-5">
                 <div class="card cardCursos">
@@ -105,46 +135,6 @@
                             <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">excel vba</a></li>
                             <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Machine Learning</a></li>
                             <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">google sheets</a></li>
-                            <li class="cardCursos__li cardCursos__li-leerMas"><a href="#" class="cardCursos__a">leer mas...</a></li>
-                                       
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3"></div>
-            <div class="col-sm-6 col-lg-3"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-lg-3 p-5">
-                <div class="card cardCursos">
-                    <img src="./assets/iconos/innovacion.png" alt="icono-prog" class="cardCursos__iconos">
-                    <h2 class="cardCursos__titulo">INOVACION</h2>
-                    <div class="card-body">
-                        <ul>
-
-                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">Transformación Digital</a></li>
-                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">cripto monedas</a></li>
-                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">analisis de inversiones</a></li>
-                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">automatizacion</a></li>
-                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">turismo virtual</a></li>
-                            <li class="cardCursos__li cardCursos__li-leerMas"><a href="#" class="cardCursos__a">leer mas...</a></li>
-                                       
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-3 p-5">
-                <div class="card cardCursos">
-                    <img src="./assets/iconos/liderazgo.png" alt="icono-prog" class="cardCursos__iconos">
-                    <h2 class="cardCursos__titulo">liderazgo</h2>
-                    <div class="card-body">
-                        <ul>
-
-                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">MANDOS MEDIOS</a></li>
-                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">Toma de decisiones</a></li>
-                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Comunicación</a></li>
-                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Gestión empresarial</a></li>
-                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Relaciones públicas</a></li>
                             <li class="cardCursos__li cardCursos__li-leerMas"><a href="#" class="cardCursos__a">leer mas...</a></li>
                                        
                         </ul>
@@ -185,7 +175,49 @@
                         </ul>
                     </div>
                 </div>
-            </div>           
+            </div>    
+
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-lg-3 p-5">
+                <div class="card cardCursos">
+                    <img src="./assets/iconos/innovacion.png" alt="icono-prog" class="cardCursos__iconos">
+                    <h2 class="cardCursos__titulo">INOVACION</h2>
+                    <div class="card-body">
+                        <ul>
+
+                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">Transformación Digital</a></li>
+                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">cripto monedas</a></li>
+                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">analisis de inversiones</a></li>
+                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">automatizacion</a></li>
+                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">turismo virtual</a></li>
+                            <li class="cardCursos__li cardCursos__li-leerMas"><a href="#" class="cardCursos__a">leer mas...</a></li>
+                                       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 p-5">
+                <div class="card cardCursos">
+                    <img src="./assets/iconos/liderazgo.png" alt="icono-prog" class="cardCursos__iconos">
+                    <h2 class="cardCursos__titulo">liderazgo</h2>
+                    <div class="card-body">
+                        <ul>
+
+                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">MANDOS MEDIOS</a></li>
+                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">Toma de decisiones</a></li>
+                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Comunicación</a></li>
+                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Gestión empresarial</a></li>
+                            <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Relaciones públicas</a></li>
+                            <li class="cardCursos__li cardCursos__li-leerMas"><a href="#" class="cardCursos__a">leer mas...</a></li>
+                                       
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3"></div>
+            <div class="col-sm-6 col-lg-3"></div>
+       
         </div>
     </main>
     <section class="futurosCursos container-fluid">

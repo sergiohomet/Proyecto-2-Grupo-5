@@ -1,0 +1,39 @@
+.porqueNosotros__titulo{
+    text-transform: uppercase;
+    margin: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.row__movile{
+    display: none;
+}
+
+.porqueNosotros_lista__movile{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.porqueNosotros__titulo__p{
+    color: rgb(114, 114, 114);
+    text-align: center;
+}
+
+@media screen and (max-width: 576px){
+
+    .porqueNosotros__titulo{
+        margin: 1.5rem 0rem;
+        font-size: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 768px){
+
+    .porqueNosotros__titulo{
+        margin: 1.5rem 0rem;
+        font-size: 1.5rem;
+    }
+    
+}

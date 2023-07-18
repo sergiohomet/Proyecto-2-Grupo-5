@@ -58,10 +58,9 @@ function agregarCurso() {
     const existe = cursosLocal.some(curso => curso.nombre === nombreCurso);
 
     if (existe) {
-        const error = document.createElement('p');
-        error.textContent = 'El curso que deseas agregar ya existe';
-        error.classList.add('bg-danger', 'text-center', 'text-white', 'fw-bold', 'fs-2', 'p-2');
-        modalCurso.appendChild(error);
+        error('El curso que desea agregar ya existe');
+    } else if(cursoNombre.value === "" || cursoCategoria.value === "" || cursoPrecio.value === "") {
+        error('Los campos deben estar completos');
     } else {
         infoCurso = {
             id: Date.now(),
@@ -102,13 +101,19 @@ function guardarEnLocalStorage() {
     localStorage.setItem('cursos', JSON.stringify(cursosLocal));
 }
 
+function error(mensaje) {
+    const error = document.createElement('p');
+    error.textContent = mensaje;
+    error.classList.add('bg-danger', 'text-center', 'text-white', 'fw-bold', 'fs-2', 'p-2');
+    modalCurso.appendChild(error);
+
+    setTimeout(() => {
+        error.remove();
+    }, 4000);
+}
 
 function limpiarHTML() {
     while(tableBody.firstChild) {
         tableBody.removeChild(tableBody.firstChild);
     }
-}
-
-function setLocalStorage() {
-    localStorage.setItem('cursos', JSON.stringify(cursosLocal));
 }

@@ -6,20 +6,19 @@ const cursoPrecio = document.querySelector('#curso-precio');
 const modalCurso = document.querySelector('#modalCurso')
 
 const btnAgregarCurso = document.querySelector('#agregar-curso');
-const btnModificar = document.querySelector('#modificar-tabla');
 const btnCerrarModal = document.querySelector('#cerrar-modal');
 let cursosLocal = []
 
 eventListener();
 function eventListener() {
-
+    
     document.addEventListener('DOMContentLoaded', () => {
         cursosLocal = JSON.parse(localStorage.getItem('cursos')) || [];
         crearHTML();
     });
-
+    
     btnAgregarCurso.addEventListener('click', agregarCurso);
-
+    
     btnCerrarModal.addEventListener('click', () => {
         cursoNombre.value = "";
         cursoCategoria.value = "";
@@ -33,10 +32,26 @@ const eliminarCurso = (id) => {
         return cursos.id !== id;
     });
     cursosLocal = cursoFiltrado;
-    localStorage.setItem('cursos', JSON.stringify(cursosLocal));
+    guardarEnLocalStorage();
     crearHTML();
 }
-  
+
+const modificarCurso = (id) => {
+    const cursoMod = cursosLocal.find( curso => {
+        return curso.id === id;
+    });
+
+    cursoNombre.value = cursoMod.nombre;
+    cursoCategoria.value = cursoMod.categoria;
+    cursoPrecio.value = cursoMod.precio;
+
+    const filter = cursosLocal.filter( curso => {
+        return curso.id !== id;
+    });
+    cursosLocal = filter;
+    guardarEnLocalStorage();
+    crearHTML();
+}
 
 function agregarCurso() {
     const nombreCurso = cursoNombre.value;
@@ -74,7 +89,7 @@ function crearHTML() {
         <td>${precio}</td>
         <td class="d-flex">
             <a href="#" class="fw-bold fs-1 text-danger px-1 text-decoration-none" onclick="eliminarCurso(${id})">X</a>
-            <a href="#" class="fw-bold fs-1 text-primary px-1 text-decoration-none">&#128393</a>
+            <a href="#" class="fw-bold fs-1 text-primary px-1 text-decoration-none" onclick="modificarCurso(${id})" data-bs-toggle="modal" data-bs-target="#modalCurso">&#128393</a>
         </td>
     `;
       tableBody.appendChild(row);

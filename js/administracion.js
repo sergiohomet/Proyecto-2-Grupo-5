@@ -20,9 +20,7 @@ function eventListener() {
     btnAgregarCurso.addEventListener('click', agregarCurso);
     
     btnCerrarModal.addEventListener('click', () => {
-        cursoNombre.value = "";
-        cursoCategoria.value = "";
-        cursoPrecio.value = "";
+        limpiarFormulario();
     })
 
 }
@@ -45,6 +43,12 @@ const modificarCurso = (id) => {
     cursoCategoria.value = cursoMod.categoria;
     cursoPrecio.value = cursoMod.precio;
 
+    
+    btnCerrarModal.classList.add('cerrar-modal')
+    if(btnCerrarModal.classList.contains('cerrar-modal')) {
+        limpiarFormulario();
+        return;
+    }
     const filter = cursosLocal.filter( curso => {
         return curso.id !== id;
     });
@@ -85,9 +89,9 @@ function crearHTML() {
         <td>${nombre}</td>
         <td>${categoria}</td>
         <td>${precio}</td>
-        <td class="d-flex">
+        <td class="d-flex border-bottom-0">
             <a href="#" class="fw-bold fs-1 text-danger px-1 text-decoration-none" onclick="eliminarCurso(${id})">X</a>
-            <a href="#" class="fw-bold fs-1 text-primary px-1 text-decoration-none" onclick="modificarCurso(${id})" data-bs-toggle="modal" data-bs-target="#modalCurso">&#128393</a>
+            <a href="#" class="fw-bold fs-1 text-primary px-1 text-decoration-none" onclick="modificarCurso(${id})" data-bs-toggle="modal" data-bs-target="#modalCurso" id="modCurso">&#128393</a>
         </td>
     `;
       tableBody.appendChild(row);
@@ -112,9 +116,9 @@ function error(mensaje) {
 }
 
 function limpiarFormulario() {
-    cursoNombre.value = cursoMod.nombre;
-    cursoCategoria.value = cursoMod.categoria;
-    cursoPrecio.value = cursoMod.precio;
+    cursoNombre.value = "";
+    cursoCategoria.value = "";
+    cursoPrecio.value = "";
 }
 
 function limpiarHTML() {

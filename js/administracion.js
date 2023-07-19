@@ -50,7 +50,6 @@ const modificarCurso = (id) => {
     });
     cursosLocal = filter;
     guardarEnLocalStorage();
-    crearHTML();
 }
 
 function agregarCurso() {
@@ -110,6 +109,12 @@ function error(mensaje) {
     setTimeout(() => {
         error.remove();
     }, 4000);
+}
+
+function limpiarFormulario() {
+    cursoNombre.value = cursoMod.nombre;
+    cursoCategoria.value = cursoMod.categoria;
+    cursoPrecio.value = cursoMod.precio;
 }
 
 function limpiarHTML() {

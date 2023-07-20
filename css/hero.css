@@ -1,3 +1,7 @@
+:root{
+    --bg-linearGral:radial-gradient(circle at 95% 68%,#0a3871,#051933 58%);
+}
+
 .hero__div{
     background-image: radial-gradient(circle at 95% 68%,#0a3871,#051933 58%);
     min-height: 60vh;

@@ -18,9 +18,9 @@
     
     <main class="container">
 
-        <article class="container guiaCursos hero">
-            <div class="row d-flex justify-content-center">
-                <section class="col-lg-8 position-relative">
+        <article class="container-fluid guiaCursos hero">
+            <div class="row d-flex justify-content-between hero__container">
+                <section class="col-lg-8 position-relative hero__sectionDatos">
                     <div class="hero__imagenFondo"></div>
                     <div class="hero__imgPerfil"></div>
                     <section class="container hero__datosusuario position-relative">
@@ -31,47 +31,104 @@
                                 <p class="ubicacion">San miguel de tucuman</p>
                             </card>
                             <div class="col-sm-3">
-                                <div class="hero__trabajoActual">
+                                <picture class="hero__trabajoActual">
                                     <img src="../assets/img/hogwarts.png" alt="hogwarts-logo" class="hogwarts-logo">
-                                </div>                                
+                                    <figcaption class="figcaption">Colegio Hogwarts de Magia y Hechicería</figcaption>
+                                </picture>                                
                             </div>
                         </div>  
                     </section>
 
                 </section>
-                <aside class="col-lg-4 border border-primary">
+                <aside class="col-lg-3 border border-primary hero__aside">
                     <h2>mis cetificados</h2>
                     <p>En esta zona estrán cargados los certificados</p>
                 </aside>
             </div>
 
         </article>
-        <article class="Cursos  mt-5 border border-primary">
+        <article class="container dashboard mt-5 border border-primary">
             <h2>Cursos que estoy realizando</h2>
 
-            <div class="row d-flex justify-content-center gap-5">
-                <div class="card col-sm-6 col-lg-2 mb-3">
-                    <p>aqui va los cursos</p>
-                </div>
-                <div class="card col-sm-6 col-lg-2 mb-3">
-                    <p>aqui va los cursos</p>
-                </div>
-                <div class="card col-sm-6 col-lg-2 mb-3">
-                    <p>aqui va los cursos</p>
-                </div>
-                <div class="card col-sm-6 col-lg-2 mb-3">
-                    <p>aqui va los cursos</p>
-                </div>
-            </div>
+            <ul class="row dashboard__containerCards bg-primary">
+                <li class="col-sm-6 col-lg-3 dashboard__cards">
+                    <div class="card__paddingDiv">
+                        <h3 class="mb-1">FORMACION</h3>
+                        <h4 class="mb-5">SEGURIDAD Y REDES</h4>
+
+                        <div class="guide-card__bar mb-1">
+                            <div class="guide-card__progress-bar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 146" class="guide-card__progress-bar__svg" fill="none" style="transform: rotate(calc( 0.5 * 180deg));">
+                                    <path d="M146,73c0,19.4-7.7,37.9-21.4,51.6C110.9,138.3,92.4,146,73,146s-37.9-7.7-51.6-21.4C7.7,110.9,0,92.4,0,73
+                                    l31,0c0,11.1,4.4,21.8,12.3,29.7C51.2,110.5,61.9,115,73,115s21.8-4.4,29.7-12.3C110.5,94.8,115,84.1,115,73L146,73z" fill="#ff8c2a"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="mt-3 card__paragrapf"><span>4/8</span> Cursos realizados</p>
+                    </div>
+                </li>
+                <li class="col-sm-6 col-lg-3 dashboard__cards">
+                    <div class="card__paddingDiv">
+                        <h3 class="mb-1">FORMACION</h3>
+                        <h4 class="mb-5">SEGURIDAD Y REDES</h4>
+
+                        <div class="guide-card__bar mb-1">
+                            <div class="guide-card__progress-bar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 146" class="guide-card__progress-bar__svg" fill="none" style="transform: rotate(calc( 1 * 180deg));">
+                                    <path d="M146,73c0,19.4-7.7,37.9-21.4,51.6C110.9,138.3,92.4,146,73,146s-37.9-7.7-51.6-21.4C7.7,110.9,0,92.4,0,73
+                                    l31,0c0,11.1,4.4,21.8,12.3,29.7C51.2,110.5,61.9,115,73,115s21.8-4.4,29.7-12.3C110.5,94.8,115,84.1,115,73L146,73z" fill="#ff8c2a"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="mt-3 card__paragrapf"><span>8/8</span> Cursos realizados</p>
+                    </div>
+                </li>
+                <li class="col-sm-6 col-lg-3 dashboard__cards">
+                    <div class="card__paddingDiv">
+                        <h3 class="mb-1">FORMACION</h3>
+                        <h4 class="mb-5">SEGURIDAD Y REDES</h4>
+
+                        <div class="guide-card__bar mb-1">
+                            <div class="guide-card__progress-bar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 146" class="guide-card__progress-bar__svg" fill="none" style="transform: rotate(calc( 0.0 * 180deg));">
+                                    <path d="M146,73c0,19.4-7.7,37.9-21.4,51.6C110.9,138.3,92.4,146,73,146s-37.9-7.7-51.6-21.4C7.7,110.9,0,92.4,0,73
+                                    l31,0c0,11.1,4.4,21.8,12.3,29.7C51.2,110.5,61.9,115,73,115s21.8-4.4,29.7-12.3C110.5,94.8,115,84.1,115,73L146,73z" fill="#ff8c2a"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="mt-3 card__paragrapf"><span>0/8</span> Cursos realizados</p>
+                    </div>
+                </li>
+                <li class="col-sm-6 col-lg-3 dashboard__cards">
+                    <div class="card__paddingDiv">
+                        <h3 class="mb-1">FORMACION</h3>
+                        <h4 class="mb-5">SEGURIDAD Y REDES</h4>
+
+                        <div class="guide-card__bar mb-1">
+                            <div class="guide-card__progress-bar">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 146" class="guide-card__progress-bar__svg" fill="none" style="transform: rotate(calc( 0.2 * 180deg));">
+                                    <path d="M146,73c0,19.4-7.7,37.9-21.4,51.6C110.9,138.3,92.4,146,73,146s-37.9-7.7-51.6-21.4C7.7,110.9,0,92.4,0,73
+                                    l31,0c0,11.1,4.4,21.8,12.3,29.7C51.2,110.5,61.9,115,73,115s21.8-4.4,29.7-12.3C110.5,94.8,115,84.1,115,73L146,73z" fill="#ff8c2a"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="mt-3 card__paragrapf"><span>2/8</span> Cursos realizados</p>
+                    </div>
+                </li>
+            </ul>
+
         </article>
         <article class="cargaDeCV  mt-5 border border-primary">
             <p>aqui se cargara el cv</p>
         </article>    
 
     </main>
-    <article class="zonaDeComentarios container mt-5 border border-primary">
-        <div class="row">
-            <h2>esta es la zona de comentarios</h2>
+    <article class="zonaDeComentarios container mt-5 border border-primary ">
+        <div class="row justify-content-center">
+            <div class="col-sm-6">
+                <h2>esta es la zona de comentarios</h2>
+
+            </div>
 
         </div>
     </article>

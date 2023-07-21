@@ -10,8 +10,15 @@
 
 .comentario__picture_userComent{
     font-size: 1rem;
+    text-align: center;
 }
 
 .comentario__picture_Coment{
     width: 100%;
 }
+
+textarea{
+    resize: none;
+    border-radius: 10px;
+}
+

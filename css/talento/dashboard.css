@@ -1,0 +1,49 @@
+
+:root{
+    --imgPerfil-whidt : 128px;
+    --bg-primary:#051933;
+    --bg-secondary:#63A3F7;
+    --bg-secondaryTransparent:#464d551a;
+    --bg-tertiary:#1878F5;
+    --bg-quaternary:#2F4D75;
+    --bg-quintero:#135FC2;
+
+    --font-size-xlarge: 2.4rem;
+    --font-size-medium: 1.6rem;
+
+
+}
+
+.dashboard__title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.dashboard__containerCards{
+    list-style: none;
+}
+
+.dashboard__cards{
+    padding: 2rem;
+}
+
+.card__paddingDiv{
+    padding: 2rem 3rem 0;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color: var(--bg-quaternary);
+    color: azure;
+}
+
+
+
+.guide-card__progress-bar{
+    background-image: url(../../assets/img/bg.svg);
+    height: 73px;
+    width: 146px;
+    overflow: hidden;    
+}
+
+.card__paragrapf{
+    font-size: 1rem;
+}

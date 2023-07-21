@@ -2,18 +2,27 @@
     --imgPerfil-whidt : 128px;
     --bg-primary:#051933;
     --bg-secondary:#63A3F7;
+    --bg-secondaryTransparent:#464d551a;
     --bg-tertiary:#1878F5;
     --bg-quaternary:#2F4D75;
     --bg-quintero:#135FC2;
+    --bg-linearGral:radial-gradient(circle at 95% 68%,#0a3871,#051933 58%);
+
+    --font-size-xlarge: 2.4rem;
+    --font-size-medium: 1.6rem;
 
 
 }
+
+body{
+    background-color: var(--bg-secondaryTransparent);
+}
+
 .hero__sectionDatos{
     border: solid 1px;
     border-radius: 10px;
     padding: 0;
-    background-color: var(--bg-quintero);
-    color: white;
+    background-color: white;
 }
 
 .hero__imagenFondo{
@@ -27,7 +36,7 @@
 .hero__imgPerfil{
     height: var(--imgPerfil-whidt);
     width: var(--imgPerfil-whidt);
-    background-image: url(../../assets/img/perfil-mono.jpg);
+    background-image: url(../../assets/img/conty-moom.profile.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,29 +69,16 @@
     font-size: 1rem;
 }
 
-.dashboard__containerCards{
-    list-style: none;
+.nombreUsuario{
+    font-size: var(--font-size-xlarge);
 }
 
-.dashboard__cards{
-    padding: 2rem;
+.miniDescrip{
+    font-size: var(--font-size-medium);
+}
+.ubicacion{
+    font-size: var(--font-size-medium);
+    font-weight: 200;
 }
 
-.card__paddingDiv{
-    padding: 2rem 3rem 0;
-    border: solid 1px;
-}
-
-
-
-.guide-card__progress-bar{
-    background-image: url(../../assets/img/bg.svg);
-    height: 73px;
-    width: 146px;
-    overflow: hidden;    
-}
-
-.card__paragrapf{
-    font-size: 1rem;
-}
 

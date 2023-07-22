@@ -43,6 +43,8 @@ const modificarCurso = (id) => {
     cursoCategoria.value = cursoMod.categoria;
     cursoPrecio.value = cursoMod.precio;
 
+    // Probar crear un boton cerrar distinto al hacer click en modificar
+    // Eliminar lo de abajo para probar como funciona
     
     btnCerrarModal.classList.add('cerrar-modal')
     if(btnCerrarModal.classList.contains('cerrar-modal')) {

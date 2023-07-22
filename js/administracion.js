@@ -42,15 +42,13 @@ const modificarCurso = (id) => {
     cursoNombre.value = cursoMod.nombre;
     cursoCategoria.value = cursoMod.categoria;
     cursoPrecio.value = cursoMod.precio;
-
-    // Probar crear un boton cerrar distinto al hacer click en modificar
-    // Eliminar lo de abajo para probar como funciona
     
     btnCerrarModal.classList.add('cerrar-modal')
     if(btnCerrarModal.classList.contains('cerrar-modal')) {
         limpiarFormulario();
         return;
     }
+
     const filter = cursosLocal.filter( curso => {
         return curso.id !== id;
     });
@@ -88,12 +86,12 @@ function crearHTML() {
   
       const row = document.createElement('tr');
       row.innerHTML = `
-        <td>${nombre}</td>
-        <td>${categoria}</td>
-        <td>${precio}</td>
+        <td class="fs-4 fw-bold">${nombre}</td>
+        <td class="fs-4 fw-bold">${categoria}</td>
+        <td class="fs-4 fw-bold">${precio}</td>
         <td class="d-flex border-bottom-0">
-            <a href="#" class="fw-bold fs-1 text-danger px-1 text-decoration-none" onclick="eliminarCurso(${id})">X</a>
-            <a href="#" class="fw-bold fs-1 text-primary px-1 text-decoration-none" onclick="modificarCurso(${id})" data-bs-toggle="modal" data-bs-target="#modalCurso" id="modCurso">&#128393</a>
+            <a href="#" class="fw-bold fs-1 delete-icon px-1 text-decoration-none" onclick="eliminarCurso(${id})">X</a>
+            <a href="#" class="fw-bold fs-1 pencil-color px-1 text-decoration-none" onclick="modificarCurso(${id})" data-bs-toggle="modal" data-bs-target="#modalCurso" id="modCurso">&#128393</a>
         </td>
     `;
       tableBody.appendChild(row);

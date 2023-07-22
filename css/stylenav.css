@@ -2,6 +2,16 @@ html{
   font-family: "Poppins", sans-serif;
 }
 
+body {
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+  margin-bottom: 70px;
+}
 
 .bg-primario {
   background-color:#0A3871 !important;
@@ -48,6 +58,7 @@ button {
 
 /* FOOTER */
 footer {
+  margin-top: auto;
   padding-top: 30px;
 }
 

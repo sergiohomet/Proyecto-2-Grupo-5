@@ -19,12 +19,9 @@ html{
     background-image: radial-gradient(circle at 40% 70%,#0A3871,#051933 58%);
   
   }
-  .bg-cuaternario-nav{
-    background-image: radial-gradient(circle at 40% 70%, rgba(10, 56, 113, 0.651), rgba(5, 25, 51, 0.5) 58%);
-  
-  }
+
   .bg-cuaternario-foot {
-    /* background-color: #2F4D75 !important; */
+
     background-image: radial-gradient(circle at 95% 68%,#0A3871,#051933 58%);
   }
   

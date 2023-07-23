@@ -6,9 +6,7 @@
     font-weight: 700;
 }
 
-.row__movile{
-    display: none;
-}
+
 
 .porqueNosotros_lista__movile{
     list-style: none;
@@ -16,8 +14,9 @@
 }
 
 .porqueNosotros__titulo__p{
-    color: rgb(114, 114, 114);
+    color: black;
     text-align: center;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 576px){

@@ -9,7 +9,7 @@
     --bg-quintero:#135FC2;
 }
 
-.dashboard__title, .hero__asideTitulo{
+.dashboard__title{
     font-size: 4rem;
     font-weight: 700;
 }

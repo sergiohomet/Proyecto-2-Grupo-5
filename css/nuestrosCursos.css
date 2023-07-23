@@ -2,13 +2,6 @@
     --altura-iconosCard: 3.5rem;
 }
 
-
-
-
-.nuestroCursos{
-    box-shadow: inset 0px 0px 20px #062142;
-}
-
 .objeto__buscado{
     height: 100%;
     border: solid 0.3rem;
@@ -59,9 +52,7 @@
 .cardCursos__titulo{
     font-size: 2rem;
     text-align: center;
-    text-transform: uppercase;
-
-    
+    text-transform: uppercase;    
 }
 
 .cardCursos__li{
@@ -85,7 +76,6 @@
 .cardCursos__li-leerMas{
     display: none;
 }
-
 
 @media screen and (max-width: 576px)  {
     .cardCursos__li-leerMenos{

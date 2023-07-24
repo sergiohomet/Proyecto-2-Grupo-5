@@ -4,3 +4,9 @@
 .bg__color-head {
     background-color: #221f1f;
 }
+.bg-body-color {
+    background-color: rgb(255, 255, 255);
+}
+.text-dark {
+    color: black !important;
+}

@@ -95,41 +95,41 @@
     <main class="nuestroCursos container-fluid">
         <h1 class="nuestroCursos__titulo">NUESTROS CURSOS</h1>
 
-        <form class="nuestroCursos__form">
-            <div class="row g-2 m-3">
-                <div class="col-sm-6 ">
-                  <div class="form-floating">
-                    <input type="text" class="form-control nuestroCursos__celdas" id="floatingInputGrid" placeholder="name@example.com" value="">
-                    <label for="floatingInputGrid">Curso:</label>
-                  </div>
-                  <div class="form-floating nuestroCursos__celdas">
-                    <select class="form-select" id="floatingSelectGrid">
-                      <option selected>Seleccione carrera</option>
-                      <option value="1">PROGRAMACION</option>
-                      <option value="2">DATA SCIENCE</option>
-                      <option value="3">GESTION</option>
-                      <option value="4">SEGURIDAD Y REDES</option>
-                      <option value="5">INOVACION</option>
-                      <option value="6">LIDERAZGO</option>
-                    </select>
-                    <label for="floatingSelectGrid">LISTA DE CURSO</label>
-                  </div>
-                  <button type="submit" class="btn nuestroCursos__btn ">Buscar</button>
-                </div>
-                <div class="col-sm-6 ">
-                    <div class="card objeto__buscado d-flex align-items-center justify-content-center">
-                     <p >aqui aparece el contenido del local storage</p>
-                    </div>
-                </div>
-                
+        <div class="nuestroCursos__form">
+          <div class="row g-2 m-3">
+            <div class="col-sm-6">
+              <!-- <div class="form-floating">
+                <input type="text" class="form-control nuestroCursos__celdas" id="curso-form" value="">
+                <label for="curso-form">Curso:</label>
+              </div> -->
+              <div class="form-floating nuestroCursos__celdas">
+                <select class="form-select" id="carrera-form">
+                  <option selected>Seleccione carrera</option>
+                  <option value="1">PROGRAMACIÓN</option>
+                  <option value="2">DATA SCIENCE</option>
+                  <option value="3">GESTION</option>
+                  <option value="4">SEGURIDAD Y REDES</option>
+                  <option value="5">INOVACION</option>
+                  <option value="6">LIDERAZGO</option>
+                </select>
+                <label for="carrera-form">LISTA DE CURSO</label>
+              </div>
+              <button type="button" class="btn nuestroCursos__btn" id="nuestroCursos-btn" onclick="filtraCursos">Buscar</button>
             </div>
-            <div class="row g-2 m-3">
-                <div class="col-sm-6 ">
-                 
-                </div>
+            <div class="col-sm-6">
+              <table class="table" id="tabla-buscador">
+                <thead class="thead-dark">
+                  <tr class="text-center">
+                    <th scope="col">Curso</th>
+                    <th scope="col">Carrera</th>
+                    <th scope="col">Duracion</th>
+                  </tr>
+                </thead>
+                <tbody id="cuerpoTabla"></tbody>
+              </table>
             </div>
-            
-        </form>
+          </div>
+         
 
         </div>
         <div class="row">
@@ -233,7 +233,7 @@
                         <ul>
 
                             <li class="cardCursos__li"><a href="#" class="cardCursos__a">MANDOS MEDIOS</a></li>
-                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">ALTOS MANDOS</a></li>
+                            <li class="cardCursos__li"><a href="#" class="cardCursos__a">Toma de decisiones</a></li>
                             <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Comunicación</a></li>
                             <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Gestión empresarial</a></li>
                             <li class="cardCursos__li cardCursos__li-leerMenos"><a href="#" class="cardCursos__a">Relaciones públicas</a></li>
@@ -333,6 +333,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"     integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
     <script src="./js/cargaCursosEnLocal.js"></script>
+    <script src="./js/buscarCursos.js"></script>
 
 </body>
 </html>

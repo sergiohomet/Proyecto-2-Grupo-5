@@ -3,7 +3,6 @@
 }
 
 .hero__div{
-    /* background-image: radial-gradient(circle at 95% 68%,#0a3871,#051933 58%); */
     min-height: 60vh;
     padding-top: 4rem;
     background-image: url(../assets/img/fondo.jpeg);
@@ -30,8 +29,9 @@
 .hero__containerP{
     margin-top: auto;
     margin-bottom: auto;
-    background-color: #051933fa;
+    background-color: #051933f3;
     color: white;
+    box-shadow: 2px 2px 5px white;
     text-shadow: 0.2px, 0.4px;
     letter-spacing: 1.5px;
     border-radius: 15px;

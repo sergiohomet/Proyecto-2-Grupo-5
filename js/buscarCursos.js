@@ -44,7 +44,6 @@ function filtraCursos() {
 
     const cursosFiltrados = buscarCursos(carreraSeleccionada);
     actualizarTabla(cursosFiltrados);
-    setTimeout(limpiarTabla, 8000);
 }
 
 function limpiarTabla() {

@@ -17,6 +17,13 @@
     width: 100%;
 }
 
+.bg-comment-color {
+    background-color: gainsboro;
+}
+.bg-comentario-color {
+    background-color: white;
+}
+
 textarea{
     resize: none;
     border-radius: 10px;

@@ -1,0 +1,39 @@
+.futurosCursos{
+    padding: 5rem;
+    color: whitesmoke;
+    background-image: url(../assets/img/fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.futurosCursos__titulo{
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+
+
+.spam__sombra{
+    background-color: #051933f3;
+    color: white;
+    border-radius: 10px;
+    padding: 0.3rem;
+}
+
+.futurosCursos__link{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+
+}
+
+.futurosCursos__link:hover{
+    color: yellow;
+}

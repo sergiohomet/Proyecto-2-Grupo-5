@@ -1,0 +1,88 @@
+
+:root{
+    --imgPerfil-whidt : 128px;
+    --bg-primary:#051933;
+    --bg-secondary:#63A3F7;
+    --bg-secondaryTransparent:#464d551a;
+    --bg-tertiary:#1878F5;
+    --bg-quaternary:#2F4D75;
+    --bg-quintero:#135FC2;
+}
+
+.dashboard__title{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.dashboard__containerCards{
+    list-style: none;
+}
+
+.card__paddingDiv{
+    margin-left: auto;
+    border: solid 1px;
+    border-radius: 10px;
+    background-color:  #062142;
+    color: azure;
+}
+
+.dashboard__cards .card__paddingDiv:hover{
+    translate: 0 -3px;
+    box-shadow: 5px 5px 5px rgb(4, 0, 58);
+    cursor: pointer;
+}
+
+
+.guide-card__progress-bar{
+    background-image: url(../../assets/img/bg.svg);
+    height: 73px;
+    width: 146px;
+    overflow: hidden;    
+}
+
+.card__paragrapf{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.guide-card__bar{
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dashboard__cardsLink{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 996px) {
+
+    .dashboard__cards{
+        margin: 2rem;
+    }
+
+    .dashboard__cards{
+        max-width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media screen and (max-width: 750px) {
+
+    .dashboard__title, .hero__asideTitulo{
+        font-size: 2.2rem;
+        text-align: center;
+    }   
+
+    .dashboard__cards{
+        max-width: 70%;
+        margin-left: 10%;
+        margin-right: 0;
+    }
+    
+}
+
+

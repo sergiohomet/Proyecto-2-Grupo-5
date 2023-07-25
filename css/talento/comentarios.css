@@ -1,0 +1,29 @@
+.comentario__picture{
+    white-space: 10vh;
+}
+.comentario__picture_imgComent{
+    height: 45px;
+    width: 48px;
+    border-radius: 50%;
+    margin: 1rem 2rem;
+}
+
+.comentario__picture_userComent{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.comentario__picture_Coment{
+    width: 100%;
+}
+
+textarea{
+    resize: none;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 450px) {
+    .guiaCursos{
+        padding-top: 0!important;
+    }
+}

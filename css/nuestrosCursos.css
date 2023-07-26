@@ -1,0 +1,90 @@
+:root{
+    --altura-iconosCard: 3.5rem;
+}
+
+.objeto__buscado{
+    height: 100%;
+    border: solid 0.3rem;
+    font-size: 2.5rem;
+}
+
+.nuestroCursos__titulo{
+    text-transform: uppercase;
+    margin: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.nuestroCursos__celdas{
+    padding-top: 3.5rem!important;
+    padding-bottom: 1.5rem!important;
+    font-size: 1rem;
+}
+
+.nuestroCursos__btn{
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #062142;
+    color: whitesmoke;
+}
+
+.cardCursos{
+    background-color: #062142;
+    color: white;
+    border-radius: 15px;
+    height: 100%;
+    transition: 400ms;
+}
+
+.cardCursos:hover{
+    translate: 0 -3px;
+    box-shadow: 10px 10px 10px black, inset 1px 1px 5px white;
+}
+
+.cardCursos__iconos{
+    height: var(--altura-iconosCard);
+    max-width: var(--altura-iconosCard);
+    margin: 1rem;
+    display: inline-block;
+}
+
+.cardCursos__titulo{
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+.cardCursos__li{
+    list-style: none;
+}
+
+.cardCursos__a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.cardCursos__a:hover{
+    color: yellow;
+}
+
+.cardCursos__li-leerMenos{
+    display: block;
+}
+
+.cardCursos__li-leerMas{
+    display: none;
+}
+
+@media screen and (max-width: 576px)  {
+    .cardCursos__li-leerMenos{
+        display: none;
+
+    }
+    
+    .cardCursos__li-leerMas{
+        display: block;
+    }
+    
+}

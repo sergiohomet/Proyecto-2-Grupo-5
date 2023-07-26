@@ -47,7 +47,6 @@ html{
     font-size: larger;
   }
   
-  /* FOOTER */
   footer {
     padding-top: 30px;
   }
@@ -94,8 +93,3 @@ html{
     background-color: #045c8c;
     color: white;
   }
-  
-  /* .enlace :hover {
-    background-color: #000;
-    color: white;
-  } */

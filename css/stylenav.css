@@ -18,6 +18,9 @@ body {
   min-height: 100vh;
 }
 
+header {
+  margin-bottom: 50px;
+}
 
 .bg-primario {
   background-color:#0A3871 !important;

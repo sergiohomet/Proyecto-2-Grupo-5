@@ -26,7 +26,7 @@ function actualizarTabla(cursosFiltrados) {
     cursosFiltrados.forEach((curso) => {
     const fila = document.createElement("tr");
     fila.innerHTML = `
-        <td><a href="./html/error404.html" class="text-dark text-decoration-none">${curso.nombreCurso}</a></td>
+        <td><a href="./html/error.html" class="text-dark text-decoration-none">${curso.nombreCurso}</a></td>
         <td>${curso.carrera}</td>
         <td>${curso.duracionEnHoras} Hs.</td>
     `;

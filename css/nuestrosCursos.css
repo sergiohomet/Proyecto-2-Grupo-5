@@ -19,7 +19,7 @@
 .nuestroCursos__celdas{
     padding-top: 3.5rem!important;
     padding-bottom: 1.5rem!important;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .nuestroCursos__btn{
@@ -50,7 +50,7 @@
 }
 
 .cardCursos__titulo{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     text-transform: uppercase;    
 }

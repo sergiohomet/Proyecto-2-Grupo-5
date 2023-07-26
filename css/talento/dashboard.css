@@ -85,4 +85,23 @@
     
 }
 
+@media screen and (max-width:338px) {
+    .guide-card__bar{
+        display: none;
+    }
+
+    .card__paddingDiv h3, .card__paddingDiv h4, .comentario__picture_Coment{
+        font-size: 0.8rem;
+    }
+
+    .cardPresentacion p{
+        font-size: 1rem;
+    }
+
+    .comentario__picture .comentario__picture_userComent{
+        font-size: 0.6rem;
+    }
+    
+}
+
 

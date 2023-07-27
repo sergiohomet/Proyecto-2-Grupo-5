@@ -1,0 +1,63 @@
+body {
+  background-image: url("../assets/img/background-design-with-gray-and-blue-gears-vector.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.centered-btn {
+  font-size: 2vw;
+  padding: 1vw 3vw;
+  background-color: #aec7cb;
+  color: black;
+  border-color: black;
+  border-radius: 0.7vw;
+  cursor: pointer;
+  margin-top: 3vw;
+}
+
+.h1-chico {
+  font-size: 4rem;
+}
+
+.h1-grande {
+  font-size: 7rem;
+}
+
+.color-primario {
+  color: #497d8a;
+  text-shadow: 1px 1px 2px black;
+}
+
+.color-secundario {
+  color: #aec7cb;
+  text-shadow: 1px 1px 2px black;
+}
+
+@media screen and (max-width: 768px) {
+  .centered-btn {
+    font-size: 3vw;
+    padding: 2vw 4vw;
+    border-radius: 3vw;
+  }
+  .h1-chico {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .centered-btn {
+    font-size: 5vw;
+    padding: 3vw 5vw;
+    border-radius: 4vw;
+  }
+}

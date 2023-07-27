@@ -7,13 +7,13 @@ const modalCurso = document.querySelector('#modalCurso')
 
 const btnAgregarCurso = document.querySelector('#agregar-curso');
 const btnCerrarModal = document.querySelector('#cerrar-modal');
-let cursosLocal = []
+let cursosLS = []
 
 eventListener();
 function eventListener() {
     
     document.addEventListener('DOMContentLoaded', () => {
-        cursosLocal = JSON.parse(localStorage.getItem('cursos')) || [];
+        cursosLS = JSON.parse(localStorage.getItem('cursos')) || [];
         crearHTML();
     });
     
@@ -26,16 +26,16 @@ function eventListener() {
 }
 
 const eliminarCurso = (id) => {
-    const cursoFiltrado = cursosLocal.filter( cursos => {
+    const cursoFiltrado = cursosLS.filter( cursos => {
         return cursos.id !== id;
     });
-    cursosLocal = cursoFiltrado;
+    cursosLS = cursoFiltrado;
     guardarEnLocalStorage();
     crearHTML();
 }
 
 const modificarCurso = (id) => {
-    const cursoMod = cursosLocal.find( curso => {
+    const cursoMod = cursosLS.find( curso => {
         return curso.id === id;
     });
 
@@ -43,22 +43,18 @@ const modificarCurso = (id) => {
     cursoCategoria.value = cursoMod.categoria;
     cursoPrecio.value = cursoMod.precio;
     
-    btnCerrarModal.classList.add('cerrar-modal')
-    if(btnCerrarModal.classList.contains('cerrar-modal')) {
-        limpiarFormulario();
-        return;
-    }
+    
 
-    const filter = cursosLocal.filter( curso => {
+    const filter = cursosLS.filter( curso => {
         return curso.id !== id;
     });
-    cursosLocal = filter;
+    cursosLS = filter;
     guardarEnLocalStorage();
 }
 
 function agregarCurso() {
     const nombreCurso = cursoNombre.value;
-    const existe = cursosLocal.some(curso => curso.nombre === nombreCurso);
+    const existe = cursosLS.some(curso => curso.nombre === nombreCurso);
 
     if (existe) {
         error('El curso que desea agregar ya existe');
@@ -72,7 +68,7 @@ function agregarCurso() {
             precio: parseInt(cursoPrecio.value)
         }
 
-        cursosLocal.push(infoCurso);
+        cursosLS.push(infoCurso);
         crearHTML();
     }
 }
@@ -81,7 +77,7 @@ function agregarCurso() {
 function crearHTML() {
     limpiarHTML();
   
-    cursosLocal.forEach(curso => {
+    cursosLS.forEach(curso => {
       const { id, nombre, categoria, precio } = curso;
   
       const row = document.createElement('tr');
@@ -101,7 +97,7 @@ function crearHTML() {
 }
   
 function guardarEnLocalStorage() {
-    localStorage.setItem('cursos', JSON.stringify(cursosLocal));
+    localStorage.setItem('cursos', JSON.stringify(cursosLS));
 }
 
 function error(mensaje) {

@@ -45,7 +45,7 @@ h1 {
 .input-group {
   position: relative;
   width: 320px;
-  margin: 30px 0; /*cambiar si hace falta*/
+  margin: 30px 0;
 }
 
 .input-group label {
@@ -80,7 +80,7 @@ h1 {
 }
 
 .forgot-pass {
-  margin: -15px 0 15px; /*cambiarrrrr*/
+  margin: -15px 0 15px;
 }
 
 .forgot-pass a {
@@ -137,7 +137,6 @@ h1 {
   transition: 0.5s ease !important;
 }
 
-/*==============LOGIN============*/
 .header {
   position: absolute;
   top: 0;

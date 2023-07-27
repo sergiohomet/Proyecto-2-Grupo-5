@@ -1,6 +1,6 @@
 function buscarCursos(carrera) {
 
-    const cursosJSON = localStorage.getItem("cursos");
+    const cursosJSON = localStorage.getItem("cursosCargados");
 
     const cursos = JSON.parse(cursosJSON);
 

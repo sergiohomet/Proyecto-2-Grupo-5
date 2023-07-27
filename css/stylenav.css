@@ -113,3 +113,18 @@ footer .line {
   background-color: #045c8c;
   color: white;
 }
+
+.navbar__button-none{
+  outline: none; 
+  box-shadow: none; 
+  background: none; 
+  color: white; 
+  border: none
+}
+
+.navbar__button-none:hover{
+  color: whitesmoke;
+}
+.navbar__button-none:visited{
+  color: white;
+}

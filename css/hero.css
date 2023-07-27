@@ -66,6 +66,7 @@
 
     .hero__img{
         max-height: 25rem;
+        max-width: 50%;
         margin-left: auto;
         margin-right: auto;
 

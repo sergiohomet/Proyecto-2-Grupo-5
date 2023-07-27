@@ -178,4 +178,4 @@ let cursos = [
   const cursosJSON = JSON.stringify(cursos);
   
  
-  localStorage.setItem("cursos", cursosJSON);
+  localStorage.setItem("cursosCargados", cursosJSON);

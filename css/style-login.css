@@ -13,10 +13,6 @@ body {
   align-items: center;
   justify-content: center;
   background-image: radial-gradient(circle at 95% 68%, #0a3871, #051933 58%);
-  /* background-image: url("../assets/img/fondo.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
   overflow: hidden;
 }
 
@@ -84,7 +80,7 @@ h1 {
 }
 
 .forgot-pass {
-  margin: -15px 0 15px; /*cambiarrrrr*/
+  margin: -15px 0 15px;
 }
 
 .forgot-pass a {
@@ -140,8 +136,6 @@ h1 {
   text-decoration: underline;
   transition: 0.5s ease !important;
 }
-
-/*==============MENÚ LOGIN============*/
 .header {
   position: absolute;
   top: 0;

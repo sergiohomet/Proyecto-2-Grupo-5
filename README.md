@@ -4,7 +4,7 @@ Así como un alfarero puede crear cosas magníficas a partir de algo simple,como
 
 ## Enlace a la Página Web en Funcionamiento
 
-https://proyecto-dos-equipo-5.netlify.app/
+https://proyecto-2-grupo-5.netlify.app
 
 ## Instrucciones de Ejecución en Local
 

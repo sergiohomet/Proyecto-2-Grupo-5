@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+}
+
+#nosotros {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  color: #135fc2;
+  font-size: 4rem;
+}
+
+main p {
+  text-align: justify;
+  font-size: 20px;
+}
+
+#avatar {
+  border-radius: 100%;
+}
+
+#tarjeta {
+  background-color: #135fc2;
+  color: white;
+  padding: 10px;
+  font-family: "Roboto Slab", serif;
+  width: 100%;
+}
+.card-text {
+  font-size: 15px;
+}
+
+.fuente {
+  font-family: "Poppins" !important;
+  font-weight: 500;
+  font-size: larger;
+}
+
+@media (min-width: 767.98px) {
+  #tarjeta {
+    width: 22%;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  #tarjeta {
+    width: 25rem;
+  }
+}

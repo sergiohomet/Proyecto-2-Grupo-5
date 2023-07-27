@@ -23,23 +23,22 @@ header {
 }
 
 .bg-primario {
-  background-color:#0A3871 !important;
+  background-color: #0a3871 !important;
 }
 
 .bg-secundario {
-  background-color: #63A3F7 !important;
+  background-color: #63a3f7 !important;
 }
 
 .bg-terciario {
-  background-color: #1878F5 !important;
+  background-color: #1878f5 !important;
 }
 
-.bg-cuaternario-nav{
-  background-image: radial-gradient(circle at 40% 70%,#0A3871,#051933 58%);
-
+.bg-cuaternario-nav {
+  background-image: radial-gradient(circle at 40% 70%, #0a3871, #051933 58%);
 }
 .bg-cuaternario-foot {
-  background-image: radial-gradient(circle at 95% 68%,#0A3871,#051933 58%);
+  background-image: radial-gradient(circle at 95% 68%, #0a3871, #051933 58%);
 }
 
 .bg-quinario {
@@ -63,7 +62,6 @@ button {
   font-weight: 500;
   font-size: larger;
 }
-
 
 footer {
   margin-top: auto;
